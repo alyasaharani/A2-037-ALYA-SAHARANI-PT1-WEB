@@ -20,6 +20,7 @@ login.onclick = (e) => {
       if (username == akun[i].username && password == akun[i].password) {
         window.location.href = "index.html";
         alert("Selamat Anda Berhasil Login");
+        localStorage.setItem("username", username);
         return;
       }
     }

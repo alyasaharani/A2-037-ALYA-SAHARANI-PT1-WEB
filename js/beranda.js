@@ -1,3 +1,3 @@
-const nama = localStorage.getItem('Nama');
+const username = localStorage.getItem('username');
 const hasil = document.getElementById('tampil');
-hasil.innerHTML = nama;
+hasil.innerHTML = username;

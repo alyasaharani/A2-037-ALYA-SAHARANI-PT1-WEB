@@ -18,7 +18,7 @@
         <li><a href="List.html">List Unit</a></li>
         <li><a href="Contact.html">Member</a></li>
         <li><a href="Data_Diri.html" style="color: black; background-color: #ddd; border-radius: 25px">Join Fanbase</a></li>
-        <li><a href="Profile.html">Profil Saya</a></li>
+        <li><a href="Profile.html">Registrasi</a></li>
       </ul>
     </div>
 
@@ -113,22 +113,22 @@
       const Alamat = document.getElementById('form_alamat');
       const Unit = document.getElementById('daf_unit');
 
-      localStorage.setItem('Nama', Nama.value);
-      localStorage.setItem('Email', Email.value);
-      localStorage.setItem('Jk', Jk.value);
-      localStorage.setItem('Nomor', Nomor.value);
-      localStorage.setItem('Alamat', Alamat.value);
-      localStorage.setItem('Unit', Unit.value);
+      sessionStorage.setItem('Nama', Nama.value);
+      sessionStorage.setItem('Email', Email.value);
+      sessionStorage.setItem('Jk', Jk.value);
+      sessionStorage.setItem('Nomor', Nomor.value);
+      sessionStorage.setItem('Alamat', Alamat.value);
+      sessionStorage.setItem('Unit', Unit.value);
 
       alert('Berhasil Mengisi Data Diri');
     }
 
-    const nama = localStorage.getItem('Nama');
-    const email = localStorage.getItem('Email');
-    const jk = localStorage.getItem('Jk');
-    const nomor = localStorage.getItem('Nomor');
-    const alamat = localStorage.getItem('Alamat');
-    const unit = localStorage.getItem('Unit');
+    const nama = sessionStorage.getItem('Nama');
+    const email = sessionStorage.getItem('Email');
+    const jk = sessionStorage.getItem('Jk');
+    const nomor = sessionStorage.getItem('Nomor');
+    const alamat = sessionStorage.getItem('Alamat');
+    const unit = sessionStorage.getItem('Unit');
 
     const data = document.getElementById('data');
     const data1 = document.getElementById('data1');
